@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Nav />
       <Routes basename={process.env.react - practice}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/result" element={<ResultPage />} />
+        <Route path="/react-practice" element={<HomePage />} />
+        <Route path="/react-practice/about" element={<AboutPage />} />
+        <Route path="react-practice/result" element={<ResultPage />} />
       </Routes>
       <Footer />
     </div>
