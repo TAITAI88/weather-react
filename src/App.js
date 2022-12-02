@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Routes>
-        <Route path="/reaact-practice" element={<HomePage />} />
-        <Route path="/reaact-practice/about" element={<AboutPage />} />
-        <Route path="/reaact-practice/result" element={<ResultPage />} />
+      <Routes basename={process.env.react - practice}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/result" element={<ResultPage />} />
       </Routes>
       <Footer />
     </div>
