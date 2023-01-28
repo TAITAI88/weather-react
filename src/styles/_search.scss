@@ -1,14 +1,19 @@
 .search {
   height: 500px;
   position: relative;
-  background-color: rgb(74, 149, 235);
+  background-image: url("../../public/img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // border: 1px solid black;
 }
 .search_bar {
-  @extend %Center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   width: 50%;
   height: 100px;
-  display: flex;
   position: absolute;
   bottom: 15%;
   left: 25%;
@@ -17,18 +22,16 @@
   box-shadow: -10px 0 10px 1px rgba(0, 0, 0, 0.2),
     10px 0 10px 1px rgba(0, 0, 0, 0.2), 0 10px 10px 1px rgba(0, 0, 0, 0.2),
     0 -10px 10px 1px rgba(0, 0, 0, 0.2);
-  form {
-    width: 70%;
-    @extend %Center;
-    input {
-      width: 50%;
-      height: 50px;
-      margin-right: 20px;
-      border-radius: 10px;
-    }
-    button {
-      height: 50px;
-      background-color: rgba(255, 255, 255, 0.667);
-    }
+  input {
+    width: 50%;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  button {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.667);
+    padding: 3px;
   }
 }

@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import { Routes, Route } from "react-router-dom";
 import "./styles/style.css";
-import ResultPage from "./pages/ResultPage";
+import WeatherPage from "./pages/WeatherPage";
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/result" element={<ResultPage />} />
       </Routes>
       <Footer />
     </div>

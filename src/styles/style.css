@@ -1,9 +1,3 @@
-.search_bar form, .search_bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +11,12 @@ html body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "Kalam", cursive;
+  font-family: "Alata", sans-serif;
+  background-color: rgba(255, 244, 244, 0.089);
+}
+
+.blank {
+  height: 400px;
 }
 
 nav {
@@ -40,43 +39,29 @@ nav ul li a {
 
 .footer {
   width: 100%;
-  background: linear-gradient(to right, #3b3b3b, #1d1d1d);
   display: block;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to right, #3b3b3b, #1d1d1d);
   color: rgb(235, 197, 197);
-}
-
-.footer_main {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 2%;
-}
-
-.info_block {
-  display: flex;
-  flex-direction: column;
-  color: rgb(235, 212, 212);
-}
-
-.footer_bottom {
-  display: flex;
-  justify-content: center;
 }
 
 .search {
   height: 500px;
   position: relative;
-  background-color: aquamarine;
+  background-image: url("../../public/img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   width: 50%;
   height: 100px;
-  display: flex;
   position: absolute;
   bottom: 15%;
   left: 25%;
@@ -84,32 +69,26 @@ nav ul li a {
   border-radius: 20px;
   box-shadow: -10px 0 10px 1px rgba(0, 0, 0, 0.2), 10px 0 10px 1px rgba(0, 0, 0, 0.2), 0 10px 10px 1px rgba(0, 0, 0, 0.2), 0 -10px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.search_bar form {
-  width: 70%;
-}
-.search_bar form input {
+.search_bar input {
   width: 50%;
-  height: 50px;
+  height: 40px;
   margin-right: 20px;
   border-radius: 10px;
+  padding: 10px;
 }
-.search_bar form button {
-  height: 50px;
+.search_bar button {
+  height: 40px;
   background-color: rgba(255, 255, 255, 0.667);
+  padding: 3px;
 }
 
 .options {
   display: flex;
-  height: 400px;
+  height: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-top-left-radius: 300px;
-  border-bottom-right-radius: 300px;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  background-color: rgba(241, 151, 99, 0.6117647059);
+  margin-right: 25%;
+  margin-left: 25%;
 }
 .options .container {
   display: flex;
@@ -126,23 +105,86 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   position: relative;
 }
-.options .container .content button {
+.options .container .content .row {
   width: 100%;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.options .container .content .row .col {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.options .container .content .row .col button {
+  width: 180px;
+  height: 180px;
   border-radius: 5%;
   margin-right: 10px;
   margin-left: 10px;
   box-shadow: -10px 0 10px 1px rgba(0, 0, 0, 0.2), 10px 0 10px 1px rgba(0, 0, 0, 0.2), 0 10px 10px 1px rgba(0, 0, 0, 0.2), 0 -10px 10px 1px rgba(0, 0, 0, 0.2);
   position: relative;
 }
-.options .container .content button p {
+.options .container .content .row .col button p {
   color: rgb(255, 255, 255);
   font-size: 48px;
 }
-.options .container .content button:hover {
+.options .container .content .row .col button:hover {
   box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.2), inset 5px 0 5px 1px rgba(0, 0, 0, 0.2), inset 0 5px 5px 1px rgba(0, 0, 0, 0.2), inset 0 -5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.weather {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c0d7e7;
+}
+.weather .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.weather .main .cityName {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(208, 216, 255);
+}
+.weather .main .cityName h2 {
+  font-size: 42 px;
+}
+.weather .main .overview,
+.weather .main .airquality,
+.weather .main .forecast {
+  width: 70%;
+  margin-bottom: 5em;
+  padding: 1em;
+  background-color: rgb(214, 175, 127);
+  border-radius: 20px;
+}
+.weather .main .overview .title,
+.weather .main .airquality .title,
+.weather .main .forecast .title {
+  font-size: 36px;
+}
+.weather .main .overview .content,
+.weather .main .airquality .content,
+.weather .main .forecast .content {
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */
