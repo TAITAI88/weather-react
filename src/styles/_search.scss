@@ -1,10 +1,12 @@
 .search {
   height: 500px;
   position: relative;
-  background-image: url("../../public/img/background.jpg");
+  // background-image: url("../../public/img/.jpg");
+  background-color: #242424c4;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 1px 10px 10px -1px rgba(0, 0, 0, 0.589);
   // border: 1px solid black;
 }
 .search_bar {
@@ -17,21 +19,36 @@
   position: absolute;
   bottom: 15%;
   left: 25%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(16, 30, 59);
   border-radius: 20px;
-  box-shadow: -10px 0 10px 1px rgba(0, 0, 0, 0.2),
-    10px 0 10px 1px rgba(0, 0, 0, 0.2), 0 10px 10px 1px rgba(0, 0, 0, 0.2),
-    0 -10px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: -10px 0 10px 1px rgba(112, 112, 112, 0.2),
+    10px 0 10px 1px rgba(112, 112, 112, 0.2),
+    0 10px 10px 1px rgba(112, 112, 112, 0.2),
+    0 -10px 10px 1px rgba(112, 112, 112, 0.2);
+  label {
+    font-size: 20 px;
+  }
   input {
-    width: 50%;
+    width: 40%;
     height: 40px;
     margin-right: 20px;
     border-radius: 10px;
     padding: 10px;
+    margin-left: 10px;
+    &:hover {
+      box-shadow: inset -2px 0 4px 1px rgba(0, 0, 0, 0.2),
+        inset 2px 0 4px 1px rgba(0, 0, 0, 0.2),
+        inset 0 2px 4px 1px rgba(0, 0, 0, 0.2),
+        inset 0 -2px 4px 1px rgba(0, 0, 0, 0.2);
+    }
   }
   button {
     height: 40px;
     background-color: rgba(255, 255, 255, 0.667);
     padding: 3px;
+    &:hover {
+      background-color: rgba(209, 221, 255, 0.667);
+      box-shadow: 5px 1px 10px -1px rgba(0, 0, 0, 0.2);
+    }
   }
 }

@@ -5,16 +5,12 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import { Routes, Route } from "react-router-dom";
 import "./styles/style.css";
-import WeatherPage from "./pages/WeatherPage";
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
+      <HomePage />
       <Footer />
     </div>
   );

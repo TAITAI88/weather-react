@@ -12,7 +12,10 @@ html body {
   display: flex;
   flex-direction: column;
   font-family: "Alata", sans-serif;
-  background-color: rgba(255, 244, 244, 0.089);
+  background-image: url("/src/images/sky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .blank {
@@ -20,8 +23,8 @@ html body {
 }
 
 nav {
-  background-color: #b4524f;
-  border: 1px solid #b4524f;
+  background-color: rgb(16, 30, 59);
+  border: 1px solid rgb(16, 30, 59);
 }
 nav ul {
   display: flex;
@@ -39,6 +42,7 @@ nav ul li a {
 
 .footer {
   width: 100%;
+  height: 50px;
   display: block;
   flex-direction: column;
   align-items: center;
@@ -49,10 +53,11 @@ nav ul li a {
 .search {
   height: 500px;
   position: relative;
-  background-image: url("../../public/img/background.jpg");
+  background-color: rgba(36, 36, 36, 0.768627451);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 1px 10px 10px -1px rgba(0, 0, 0, 0.589);
 }
 
 .search_bar {
@@ -65,79 +70,32 @@ nav ul li a {
   position: absolute;
   bottom: 15%;
   left: 25%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(16, 30, 59);
   border-radius: 20px;
-  box-shadow: -10px 0 10px 1px rgba(0, 0, 0, 0.2), 10px 0 10px 1px rgba(0, 0, 0, 0.2), 0 10px 10px 1px rgba(0, 0, 0, 0.2), 0 -10px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: -10px 0 10px 1px rgba(112, 112, 112, 0.2), 10px 0 10px 1px rgba(112, 112, 112, 0.2), 0 10px 10px 1px rgba(112, 112, 112, 0.2), 0 -10px 10px 1px rgba(112, 112, 112, 0.2);
+}
+.search_bar label {
+  font-size: 20 px;
 }
 .search_bar input {
-  width: 50%;
+  width: 40%;
   height: 40px;
   margin-right: 20px;
   border-radius: 10px;
   padding: 10px;
+  margin-left: 10px;
+}
+.search_bar input:hover {
+  box-shadow: inset -2px 0 4px 1px rgba(0, 0, 0, 0.2), inset 2px 0 4px 1px rgba(0, 0, 0, 0.2), inset 0 2px 4px 1px rgba(0, 0, 0, 0.2), inset 0 -2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 .search_bar button {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.667);
   padding: 3px;
 }
-
-.options {
-  display: flex;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 25%;
-  margin-left: 25%;
-}
-.options .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2%;
-}
-.options .container .title {
-  display: inline;
-  justify-content: flex-start;
-  width: 100%;
-}
-.options .container .content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.options .container .content .row {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.options .container .content .row .col {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-.options .container .content .row .col button {
-  width: 180px;
-  height: 180px;
-  border-radius: 5%;
-  margin-right: 10px;
-  margin-left: 10px;
-  box-shadow: -10px 0 10px 1px rgba(0, 0, 0, 0.2), 10px 0 10px 1px rgba(0, 0, 0, 0.2), 0 10px 10px 1px rgba(0, 0, 0, 0.2), 0 -10px 10px 1px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-.options .container .content .row .col button p {
-  color: rgb(255, 255, 255);
-  font-size: 48px;
-}
-.options .container .content .row .col button:hover {
-  box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.2), inset 5px 0 5px 1px rgba(0, 0, 0, 0.2), inset 0 5px 5px 1px rgba(0, 0, 0, 0.2), inset 0 -5px 5px 1px rgba(0, 0, 0, 0.2);
+.search_bar button:hover {
+  background-color: rgba(209, 221, 255, 0.667);
+  box-shadow: 5px 1px 10px -1px rgba(0, 0, 0, 0.2);
 }
 
 .weather {
@@ -145,46 +103,132 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c0d7e7;
+  background-image: url("/src/images/sky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .weather .main {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2%;
-  margin-top: 50px;
+  margin-top: 5%;
   margin-bottom: 50px;
 }
 .weather .main .cityName {
-  width: 70%;
+  width: 60%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  border: 1px solid black;
+  justify-content: center;
+  position: relative;
+  left: 20%;
   border-radius: 10px;
-  background-color: rgb(208, 216, 255);
 }
 .weather .main .cityName h2 {
-  font-size: 42 px;
+  color: wheat;
+  font-size: 56px;
+  align-content: center;
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.589);
 }
-.weather .main .overview,
-.weather .main .airquality,
-.weather .main .forecast {
+.weather .main .sec_01 {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 100px;
+}
+.weather .main .sec_01 .overview {
+  height: auto;
   width: 70%;
-  margin-bottom: 5em;
-  padding: 1em;
-  background-color: rgb(214, 175, 127);
-  border-radius: 20px;
+  position: relative;
+  left: 15%;
+  padding: 2em;
+  background-color: rgba(36, 36, 36, 0.6352941176);
+  border-radius: 25px;
 }
-.weather .main .overview .title,
-.weather .main .airquality .title,
-.weather .main .forecast .title {
-  font-size: 36px;
+.weather .main .sec_01 .overview .title {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
 }
-.weather .main .overview .content,
-.weather .main .airquality .content,
-.weather .main .forecast .content {
-  height: 300px;
+.weather .main .sec_01 .overview .title p {
+  font-size: 54px;
+  color: wheat;
+}
+.weather .main .sec_01 .overview .title::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, white, rgba(36, 36, 36, 0.6352941176));
+  position: absolute;
+  bottom: 1em;
+}
+.weather .main .sec_01 .overview .content {
+  height: auto;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.weather .main .sec_01 .overview .content .desc {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.weather .main .sec_01 .overview .content .temp {
+  font-size: 64px;
+}
+.weather .main .sec_01 .overview .content .rain,
+.weather .main .sec_01 .overview .content .windSpeed {
+  display: flex;
+}
+.weather .main .sec_01 .overview .content .rain img,
+.weather .main .sec_01 .overview .content .windSpeed img {
+  height: 28px;
+}
+.weather .main .sec_01 .overview .content .rain p,
+.weather .main .sec_01 .overview .content .windSpeed p {
+  font-size: 24px;
+}
+.weather .main .sec_01 .overview .content .obsTime {
+  display: flex;
+  justify-content: flex-end;
+}
+.weather .main .sec_02 {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 100px;
+}
+.weather .main .sec_02 .others {
+  height: auto;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  padding: 2em;
+  background-color: rgba(36, 36, 36, 0.6352941176);
+  border-radius: 25px;
+}
+.weather .main .sec_02 .others .title {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.weather .main .sec_02 .others .title p {
+  font-size: 54px;
+  color: wheat;
+}
+.weather .main .sec_02 .others .title::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, white, rgba(36, 36, 36, 0.6352941176));
+  position: absolute;
+  bottom: 1em;
+}
+.weather .main .sec_02 .others .content {
+  height: auto;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.weather .main .sec_02 .others .content p {
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

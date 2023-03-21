@@ -10,7 +10,10 @@ html {
     display: flex;
     flex-direction: column;
     font-family: "Alata", sans-serif;
-    background-color: rgba(255, 244, 244, 0.089);
+    background-image: url("/src/images/sky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 .blank {
@@ -20,5 +23,4 @@ html {
 @import "./nav";
 @import "./footer";
 @import "./search";
-@import "./options";
 @import "./weather";
