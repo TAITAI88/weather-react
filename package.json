@@ -1,6 +1,6 @@
 {
-  "name": "react-practice",
-  "homepage": "https://taitai88.github.io/react-practice",
+  "name": "weather-react",
+  "homepage": "https://taitai88.github.io/weather-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
