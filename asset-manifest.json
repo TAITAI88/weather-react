@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/react-practice/static/css/main.1fd719a1.css",
-    "main.js": "/react-practice/static/js/main.4b2eb2bb.js",
+    "main.css": "/react-practice/static/css/main.4898e0c4.css",
+    "main.js": "/react-practice/static/js/main.1c5fb852.js",
+    "static/media/sky.jpg": "/react-practice/static/media/sky.3f491988e6636a1463b8.jpg",
+    "static/media/wind.png": "/react-practice/static/media/wind.12f53bbd8ea5e3787111.png",
+    "static/media/rain.png": "/react-practice/static/media/rain.bee2982cb89c8e61f6df.png",
     "index.html": "/react-practice/index.html",
-    "main.1fd719a1.css.map": "/react-practice/static/css/main.1fd719a1.css.map",
-    "main.4b2eb2bb.js.map": "/react-practice/static/js/main.4b2eb2bb.js.map"
+    "main.4898e0c4.css.map": "/react-practice/static/css/main.4898e0c4.css.map",
+    "main.1c5fb852.js.map": "/react-practice/static/js/main.1c5fb852.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fd719a1.css",
-    "static/js/main.4b2eb2bb.js"
+    "static/css/main.4898e0c4.css",
+    "static/js/main.1c5fb852.js"
   ]
 }
