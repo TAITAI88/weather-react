@@ -126,7 +126,6 @@ nav ul li a {
   color: wheat;
   font-size: 56px;
   align-content: center;
-  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.589);
 }
 .weather .main .sec_01 {
   width: 100%;
